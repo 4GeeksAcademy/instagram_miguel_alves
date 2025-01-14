@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+
+    <title>Instagram</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-light py-3">
+        <div class="container-fluid">
+            <div class="d-flex w-100 justify-content-between">
+                <div type="button" class="navbar-brand mb-0 h1">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <h5 class="d-inline-block fs-5">Instagram</h5>
+                </div>
+                <div class="d-flex align-right justify-content-end">
+                    <!-- Button trigger modal --> 
+                    <button type="button" class="btn btn-success me-2" data-bs-toggle="modal"
+                        data-bs-target="#modal">
+                        Create a new post
+                    </button>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="BotonOne"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="BotonOne">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                        
+                          </div>
+                    </div>    
+                  
+                   
+                </div>
+            </div>
+            
+          </nav>
+          
+            <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="modalSegundo" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalSegundo">Create a new post</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Caption:</h6>
+                            <textarea class="form-control" placeholder="Add the caption of your post here"
+                                id="floatingTextarea2"></textarea>
+                            <div class="row p-2">
+                                <button class="col-1 border rounded p-1 m-1 btn-light">
+                                    <i class="fa-solid fa-camera"></i>
+                                </button>
+                                <button class="col-1 border rounded p-1 m-1 btn-light">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Toggle Grid -->
+                <div class="container-fluid p-2">
+                    <ul class="nav nav-pill justify-content-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                                role="tab" aria-controls="home" aria-selected="true"><i
+                                    class="fa-solid fa-table-cells"></i></a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                                role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <!-- 3 photos per row grid -->
+                        <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row">
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.unsplash.com/photo-1612006564829-34fd2219e8e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt=""></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.unsplash.com/photo-1734945773967-ca39493ef315?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt=""></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://www.shutterstock.com/image-photo/chow-canis-lupus-familiaris-spitz-600nw-2448868755.jpg" class="img-fluid w-100" alt=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://images.unsplash.com/photo-1672087537910-3644f885e9bc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100" alt=""></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS6s0pnzo9C7pi1fDd1KnNX_JJAu4SvPNZgA&s" class="img-fluid w-100" alt=""></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://media-front.elmostrador.cl/2022/11/trekking-700x467.jpg" class="img-fluid w-100" alt=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://media.gq.com.mx/photos/66afa4681cd2629f4bff2dc6/4:3/w_2668,h_2001,c_limit/Michael_Phelps_587853148.jpg" class="img-fluid w-100" alt=""></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://img.tecnomagazine.net/2019/06/software-de-programacion.jpg" alt="" class="img-fluid w-100"></div>
+                                <div class="col-4 p-1"><img style="height: 30vw; object-fit: cover;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7jh5I_dlFNScU1Zla356DzuacPrFhefoEg&s" class="img-fluid w-100" alt=""></div>
+                            </div>
+                        </div>
+                        <!-- 1 photo per row grid --> 
+                        <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row my-4">
+                                <div class="col-6 mx-auto border rounded p-0">
+                                    <div class="d-flex p-2">
+                                        <div class="w-100 fs-4">De paseo en bici!</div>
+                                        <small class="align-bottom">10/26</small>
+                                    </div>
+                                    <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1612006564829-34fd2219e8e4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100 col-12" alt=""/>
+                                    <div class="p-2">
+                                        <strong>25 Likes</strong>
+                                        <p>Despues de una larga ruta, a beber un poco de agua</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-6 mx-auto border rounded p-0">
+                                    <div class="d-flex p-2">
+                                        <div class="w-100 fs-4">Argentina campeon del mundo!</div>
+                                        <small>09/17</small>
+                                    </div>
+                                    <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1672087537910-3644f885e9bc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid w-100 col-12" alt=""/>
+                                    <div class="p-2">
+                                        <strong>125 Likes</strong>
+                                        <p>Desde los mas chicos, hasta los mas adultos celebraron argentina y su mundial!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>  
+                       
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                crossorigin="anonymous"></script>
+
+
+        
+</body>
+</html>
